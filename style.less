@@ -1,0 +1,177 @@
+/* Selection colours */
+::selection     {background: #fefc02;}
+::-moz-selection  {background: #fefc02;}
+img::selection    {background: transparent;}
+img::-moz-selection {background: transparent;}
+body {-webkit-tap-highlight-color: #fefc02;}
+
+/* All fonts
+font-family: 'Chronicle Display A', 'Chronicle Display B'; font-weight: 700; font-style: normal;
+font-family: 'Whitney A', 'Whitney B'; font-weight: 500; font-style: normal;
+font-family: 'Whitney A', 'Whitney B'; font-weight: 600; font-style: normal;
+font-family: 'Whitney A', 'Whitney B'; font-weight: 700; font-style: normal;
+*/
+
+/* Universal Styles */
+img {
+  max-width: 100%;
+  }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+body{
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased !important;
+  background-color: #e2e2e2;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+#top_bar{
+  height: 15px;
+  background-color: #85a8ad;
+  width: 100%;
+  position: fixed;
+  }
+
+ .header {
+  height: 280px;
+  text-align: center;
+  background: -moz-linear-gradient(left,  rgba(168,190,196,1) 0%, rgba(119,164,176,0.92) 54%, rgba(148,183,138,0.91) 64%, rgba(254,252,2,0.91) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(168,190,196,1)), color-stop(54%,rgba(119,164,176,0.92)), color-stop(64%,rgba(148,183,138,0.91)), color-stop(100%,rgba(254,252,2,0.91))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(168,190,196,1) 0%,rgba(119,164,176,0.92) 54%,rgba(148,183,138,0.91) 64%,rgba(254,252,2,0.91) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(168,190,196,1) 0%,rgba(119,164,176,0.92) 54%,rgba(148,183,138,0.91) 64%,rgba(254,252,2,0.91) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(168,190,196,1) 0%,rgba(119,164,176,0.92) 54%,rgba(148,183,138,0.91) 64%,rgba(254,252,2,0.91) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(168,190,196,1) 0%,rgba(119,164,176,0.92) 54%,rgba(148,183,138,0.91) 64%,rgba(254,252,2,0.91) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8bec4', endColorstr='#e8fefc02',GradientType=1 ); /* IE6-9 */
+
+
+
+
+
+
+
+    h1{
+      font-family: 'Chronicle Display A', 'Chronicle Display B';
+      font-weight: 800;
+      font-style: normal;
+      font-size: 75px;
+      color: #ffffff;
+      line-height: 0px;
+      opacity: .95;
+      z-index: 99;
+      font-weight: 300;
+      position: absolute;
+      top: 135px;
+      width: 100%;
+    }
+
+    h3{
+        font-family: 'Whitney A', 'Whitney B'; font-weight: 700; font-style: normal;
+        font-size: 19px;
+        text-align: center;
+        color: #647995;
+        line-height: 0px;
+        z-index: 99;
+        position: absolute;
+        top: 185px;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+         -webkit-animation: color-change 2s infinite;
+        -moz-animation: color-change 2s infinite;
+        -o-animation: color-change 2s infinite;
+        -ms-animation: color-change 2s infinite;
+        animation: color-change 2s infinite;
+    }
+ }
+
+    .about {
+      background-color: #e2e2e2;
+      padding: 50px;
+      p {
+        font-family: 'Whitney A', 'Whitney B';
+        font-weight: 600;
+        font-style: normal;
+        font-size: 19px;
+        text-align: center;
+        color: #647995;
+        letter-spacing: 1px;
+        width: 620px;
+        margin: 0 auto;
+        padding-top: 50px;
+      }
+     }
+
+     #container{
+      margin: 50px auto;
+
+      .box{
+        img{
+          border: solid #ffffff 16px;
+          margin: 10px;
+          border-radius: 5px;
+        }
+      }
+
+     }
+
+      .nicole{
+      background-color: #d9d9d9;
+      text-align: center;
+      padding: 30px;
+      img{
+        border-radius: 200px;
+        margin: 0 auto;
+      }
+     }
+
+     @-webkit-keyframes color-change {
+    0% { color: #a8bec4; }
+    50% { color: #77a4b0; }
+    100% { color: #fefc02; }
+
+}
+@-moz-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-ms-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-o-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
