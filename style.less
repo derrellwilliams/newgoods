@@ -129,14 +129,52 @@ time, mark, audio, video {
      #container{
       margin: 50px auto;
 
-      .box{
-        img{
+      .box { 
+        img {
           border: solid #ffffff 16px;
           margin: 10px;
           border-radius: 5px;
-        }
+          background-color: #ffffff;
+          -webkit-transition: opacity .5s ease-in-out;
+          -moz-transition: opacity .5s ease-in-out;
+          -o-transition: opacity .5s ease-in-out;
+          -ms-transition: opacity .5s ease-in-out;
+          transition: opacity .5s ease-in-out;
+
+            &:hover{
+              opacity: .2;
+            }
+          }
+            .caption {
+              display: none;
+              position: relative;
+              top: -285px;
+              font-family: 'Whitney A', 'Whitney B';
+              font-weight: 600;
+              font-style: normal;
+              font-size: 19px;
+              text-align: center;
+              color: #647995;
+               -o-transition:.5s;
+              -ms-transition:.5s;
+              -moz-transition:.5s;
+              -webkit-transition:.5s;
+              transition:.5s;
+
+            }
+
+            &:hover .caption {
+              display: block;
+            }
       }
 
+     }
+
+
+
+     .fade{
+        background-color: #fffff;
+        display: none;
      }
 
       .nicole{
@@ -149,10 +187,64 @@ time, mark, audio, video {
       }
      }
 
-     @-webkit-keyframes color-change {
-    0% { color: #a8bec4; }
-    50% { color: #77a4b0; }
-    100% { color: #fefc02; }
+
+    #product_page {
+      background: -moz-linear-gradient(left,  rgba(168,190,196,1) 0%, rgba(119,164,176,0.92) 54%, rgba(148,183,138,0.91) 64%, rgba(254,252,2,0.91) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(168,190,196,1)), color-stop(54%,rgba(119,164,176,0.92)), color-stop(64%,rgba(148,183,138,0.91)), color-stop(100%,rgba(254,252,2,0.91))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left,  rgba(168,190,196,1) 0%,rgba(119,164,176,0.92) 54%,rgba(148,183,138,0.91) 64%,rgba(254,252,2,0.91) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left,  rgba(168,190,196,1) 0%,rgba(119,164,176,0.92) 54%,rgba(148,183,138,0.91) 64%,rgba(254,252,2,0.91) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(left,  rgba(168,190,196,1) 0%,rgba(119,164,176,0.92) 54%,rgba(148,183,138,0.91) 64%,rgba(254,252,2,0.91) 100%); /* IE10+ */
+      background: linear-gradient(to right,  rgba(168,190,196,1) 0%,rgba(119,164,176,0.92) 54%,rgba(148,183,138,0.91) 64%,rgba(254,252,2,0.91) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8bec4', endColorstr='#e8fefc02',GradientType=1 ); /* IE6-9 */
+    }
+
+    .product_detail {
+      margin: 0 auto;
+      text-align: center;
+
+      .product_name {
+        font-family: 'Whitney A', 'Whitney B';
+        font-weight: 600;
+        font-style: normal;
+        font-size: 38px;
+        text-align: center;
+        color: #ffffff;
+        margin: 20px;
+      }
+
+      img{
+        border: solid #ffffff 16px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes color-change {
+0% { color: #a8bec4; }
+50% { color: #77a4b0; }
+100% { color: #fefc02; }
 
 }
 @-moz-keyframes color-change {
