@@ -107,7 +107,7 @@ time, mark, audio, video {
     .main_area {
       background-color: #e2e2e2;
       padding: 50px;
-      
+
       p.about {
         font-family: 'Whitney A', 'Whitney B';
         font-weight: 600;
@@ -126,11 +126,15 @@ time, mark, audio, video {
      #container{
       margin: 50px auto;
 
-      .box { 
+      .image_container{
+        margin: 10px;
+      }
+
+      .box {
+        position: relative;
 
         img {
           border: solid #ffffff 16px;
-          margin: 10px;
           border-radius: 5px;
           background-color: #ffffff;
           -webkit-transition: opacity .5s ease-in-out;
@@ -139,7 +143,7 @@ time, mark, audio, video {
           -ms-transition: opacity .5s ease-in-out;
           transition: opacity .5s ease-in-out;
           }
-            
+
           .overlay {
               background-color:rgba(255,255,255,0.0);
               bottom: 0;
@@ -148,9 +152,9 @@ time, mark, audio, video {
               position: absolute;
               right: 0;
               opacity: 0;
-              border-radius: 5px;
               top: 0;
               z-index: 1;
+              border-radius: 5px;
               -webkit-transition: all .5s ease-in-out;
               -moz-transition: background-color .5s ease-in-out;
               -o-transition: opacity .5s ease-in-out;
@@ -179,13 +183,14 @@ time, mark, audio, video {
                 text-align: center;
                 margin-top: 5px;
               }
-            }         
+            }
 
-          &:hover .overlay { 
-            background-color:rgba(255,255,255,0.75); 
+          &:hover .overlay {
+            background-color:rgba(255,255,255,0.75);
             opacity: 1;
             -webkit-transform: scale(.95);
-            
+
+
           }
       }
 
@@ -219,22 +224,116 @@ time, mark, audio, video {
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8bec4', endColorstr='#e8fefc02',GradientType=1 ); /* IE6-9 */
     }
 
+    .back_bar{
+      width: 100%;
+      background-color: #ffffff;
+      height: 32px;
+
+
+      &:hover {
+      background-color: #647995;
+      -webkit-transition: background-color 200ms linear;
+      -moz-transition: background-color 200ms linear;
+      -o-transition: background-color 200ms linear;
+      -ms-transition: background-color 200ms linear;
+      transition: background-color 200ms linear;
+
+        p{
+          color: #ffffff;
+        }
+
+        .icon_arrow{
+          color: #fff;
+        }
+    }
+
+      p{
+        padding-top: 6px;
+        padding-left: 15px;
+        font-family: 'Whitney A', 'Whitney B';
+        font-weight: 600;
+        font-style: normal;
+        color: #647995;
+      }
+
+
+      .icon_arrow{
+        font-size: 10px;
+        margin-right: 10px;
+        color: #647995;
+      }
+    }
+
+
     .product_detail {
-      margin: 0 auto;
-      text-align: center;
+      margin: 30px auto;
 
       .product_name {
         font-family: 'Whitney A', 'Whitney B';
         font-weight: 600;
         font-style: normal;
         font-size: 38px;
-        text-align: center;
+        float: left;
         color: #ffffff;
-        margin: 20px;
+        margin: 20px 0 20px 0;
+
+        span{
+          font-weight: 300;
+          font-size: 32px;
+          padding-left: 10px;
+        }
+      }
+
+      .button{
+        width: 200px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 15px 15px 15px 15px;
+        float: right;
+        text-align: center;
+        margin-top: 18px;
+        color: #647995;
+
+        p{
+          color: #647995;
+          font-family: 'Whitney A', 'Whitney B';
+          font-weight: 600;
+        }
+
+         &:hover {
+          background-color: #647995;
+
+          -webkit-transition: background-color 200ms linear;
+          -moz-transition: background-color 200ms linear;
+          -o-transition: background-color 200ms linear;
+          -ms-transition: background-color 200ms linear;
+          transition: background-color 200ms linear;
+
+          p{
+            color: #ffffff;
+          }
+
+
+
+        }
       }
 
       img{
         border: solid #ffffff 16px;
+        border-radius: 10px;
+      }
+
+      .product_image_row {
+        width: 683px;
+        margin: 0 auto;
+
+        .summary {
+        font-family: 'Whitney A', 'Whitney B';
+        font-weight: 500;
+        color: #ffffff;
+        float: left;
+        margin-bottom: 20px;
+        }
       }
     }
 
