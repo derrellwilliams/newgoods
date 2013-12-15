@@ -173,7 +173,7 @@ time, mark, audio, video {
               transition: all .5s ease-in-out;
               -webkit-transition: all .2s ease-in-out;
 
-              .title {
+              .title{
                 font-family: 'Whitney A', 'Whitney B';
                 font-weight: 600;
                 font-style: normal;
@@ -184,7 +184,7 @@ time, mark, audio, video {
                 margin-top: 20%;
               }
 
-              .subtitle {
+              .subtitle{
                 font-family: 'Whitney A', 'Whitney B';
                 font-weight: 500;
                 font-style: normal;
@@ -234,7 +234,7 @@ time, mark, audio, video {
       background: linear-gradient(to right,  rgba(168,190,196,1) 0%,rgba(119,164,176,0.92) 54%,rgba(148,183,138,0.91) 64%,rgba(254,252,2,0.91) 100%); /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8bec4', endColorstr='#e8fefc02',GradientType=1 ); /* IE6-9 */
 
-      img {
+      img .product_images {
         width: 100%;
         max-width: 100%;
       }
@@ -244,6 +244,10 @@ time, mark, audio, video {
       width: 100%;
       background-color: #ffffff;
       height: 32px;
+
+      img {
+          margin-right: 5px;
+        }
 
 
       &:hover {
@@ -255,12 +259,10 @@ time, mark, audio, video {
       transition: background-color 200ms linear;
 
         p{
+          padding-left: 8px;
           color: #ffffff;
         }
 
-        .icon_arrow{
-          color: #fff;
-        }
     }
 
       p{
